@@ -82,7 +82,7 @@ npm run preview
 
 ## Deployment
 
-The app can be deployed on Vercel, Netlify, or any static hosting provider that supports Vite apps.
+The app has been deployed on Vercel static hosting provider that supports Vite apps.
 
 Build command:
 
@@ -98,14 +98,6 @@ dist
 
 ## Submission Links
 
-GitHub repository link:
+GitHub repository link: https://github.com/saurabh0426/Book_Managemnt_System.git
 
-```txt
-Add your GitHub repository URL here
-```
-
-Live deployed URL:
-
-```txt
-Add your deployed app URL here
-```
+Live deployed URL: https://book-managemnt-system.vercel.app/
