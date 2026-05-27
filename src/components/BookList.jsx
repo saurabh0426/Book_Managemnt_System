@@ -4,13 +4,11 @@ import FilterDropdown from "./FilterDropdown";
 import BookInfo from "./BookInfo";
 import SearchBar from "./SearchBar";
 
-
 function BookList({ books, setBooks, onEditBook }) {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("");
   const [bookToDelete, setBookToDelete] = useState(null);
   const [deleteError, setDeleteError] = useState("");
-
 
   const normalizedSearchTerm = searchTerm.trim().toLowerCase();
   const genres = [
@@ -48,7 +46,9 @@ function BookList({ books, setBooks, onEditBook }) {
       setBookToDelete(null);
       setDeleteError("");
     } catch (error) {
-      setDeleteError(error.message || "Failed to delete book. Please try again.");
+      setDeleteError(
+        error.message || "Failed to delete book. Please try again.",
+      );
     }
   };
 
@@ -140,7 +140,6 @@ function BookList({ books, setBooks, onEditBook }) {
             )}
 
             <div className="mt-6 flex justify-end gap-1">
-             
               <button
                 type="button"
                 onClick={handleConfirmDelete}
@@ -149,7 +148,7 @@ function BookList({ books, setBooks, onEditBook }) {
                 Yes
               </button>
 
-               <button
+              <button
                 type="button"
                 onClick={handleCancelDelete}
                 className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm"

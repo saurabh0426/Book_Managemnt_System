@@ -1,9 +1,7 @@
 function BookInfo({ label, value, className = "" }) {
   return (
     <div>
-      <p className="text-gray-800">
-        {label}
-      </p>
+      <p className="text-gray-800">{label}</p>
 
       <p
         className={`text-xs text-gray-500 uppercase tracking-wide truncate ${className}`}
@@ -16,4 +14,3 @@ function BookInfo({ label, value, className = "" }) {
 }
 
 export default BookInfo;
-
